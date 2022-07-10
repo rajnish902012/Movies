@@ -14,4 +14,8 @@ Instruction for running the database(on port 5432):-
 Instruction to run the backend:-
 
 1. cd backend
-2. virtualenv venv
+2. python3 -m venv venv
+3. source venv/bin/activate
+4. pip install -r requirements.txt
+5. python manage.py migrate movies
+6. python manage.py runserver 8080
